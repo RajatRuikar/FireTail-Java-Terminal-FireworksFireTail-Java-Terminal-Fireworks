@@ -1,2 +1,131 @@
-# FireTail-Java-Terminal-FireworksFireTail-Java-Terminal-Fireworks
-FireTail is a Java console application that renders animated **fireworks inside the terminal** using ASCII characters and ANSI color effects.  
+# 🎆 FireTail – Java Terminal Fireworks Animation
+
+**FireTail** is a Java console application that renders animated fireworks directly inside your terminal using ASCII characters and ANSI color effects.  
+Each firework randomly bursts across the screen, expands outward, and fades away—creating a vibrant and realistic console fireworks display.
+
+---
+
+![Firework Demo](assets/fireworks-demo.gif)
+
+---
+
+## ✨ Features
+
+- Randomized firework bursts across the screen  
+- Expanding and fading animation effects  
+- Smooth color transitions and multiple variations  
+- Parallel animation rendering for fluid visuals  
+- Full-screen terminal mode support  
+- Customizable configuration via `config.properties`
+
+### Configurable Controls
+- Tail length (fade duration)  
+- Blast radius  
+- Animation speed  
+- Font size  
+- Frame delay  
+
+Works on **Windows**, **Linux**, and **Mac**.
+
+---
+
+## 🧱 Project Structure
+
+FireworkWishApp/
+│
+├── build/
+│
+├── FireWork.jar
+├── Start.bat
+│
+├── resources/
+│   └── config.properties
+│
+├── src/com/firework/app/
+│   ├── FireworkApp.java
+│   ├── ConfigLoader.java
+│   ├── FireworkRenderer.java
+│   ├── FireworkBurst.java
+│   ├── FireworkManager.java
+│   ├── WishDisplay.java
+│   └── TerminalUtils.java
+│
+└── lib/
+    └── jansi-2.4.1.jar
+
+
+---
+
+## 🚀 How to Run
+
+### Option 1 – Quick Start
+Run the provided batch file:
+build/Start.bat
+
+### Option 2 – Manual Build & Run
+Compile and package manually using:
+javac FireWork.java
+jar cfe FireTail.jar FireWork FireWork.class
+
+You can modify configuration values (speed, radius, colors, etc.) in:
+resources/config.properties
+
+---
+
+## 🖥 Full-Screen Support
+
+When launched, FireTail will:
+- Expand the terminal window to full screen  
+- Center the explosion display  
+- Adjust the font size dynamically based on configuration
+
+If automatic fullscreen fails:
+- **Windows:** Press `Alt + Enter`  
+- **Linux/Mac:** Use your terminal’s “Full Screen” option  
+
+---
+
+## 📦 Requirements
+
+| Requirement | Version |
+|--------------|----------|
+| JDK | 17 or above |
+| OS | Windows / Linux / Mac |
+| Terminal | ANSI color compatible |
+
+---
+
+## 🛣 Roadmap / Future Enhancements
+
+- Add launch and explosion sound effects  
+- Introduce custom-shaped fireworks (heart, star, etc.)  
+- Save fireworks display as a GIF animation  
+- Improve parallel rendering performance  
+- Add keyboard shortcuts (pause, quit, color change)
+
+---
+
+## 🤝 Contributions
+
+Contributions, suggestions, and feature requests are welcome!  
+Submit a pull request (PR) or open an issue to share your ideas and improvements.
+
+---
+
+## 📜 License
+
+Licensed under the **MIT License** – free to use, modify, and distribute.
+
+---
+
+## ⭐ Support
+
+If you enjoy **FireTail**, consider supporting the project:  
+⭐ Star the repository  
+📦 Fork and contribute  
+📝 Suggest new features  
+
+---
+
+### 👨‍💻 Author
+**Rajat Ruikar** 
